@@ -1,0 +1,43 @@
+.clearfix::after{
+	display: block;
+	content: "";
+	clear: both;
+}
+body{
+	background: url(../img/pexels-photo-236910.jpeg)no-repeat fixed;
+	background-size: 100%;
+	color: #fff;
+}
+ul{
+list-style-type:none;
+color: #fff;
+}
+header{
+	max-width: 1200px;
+	margin:30px auto;
+	position: relative;
+}
+.logo img{
+	width: 120px;
+	height: auto;
+}
+header nav{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+header nav ul li{
+	float: left;
+	margin: 20px 30px;
+}
+.aaa ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 20px;
+	border: 1px solid transparent;
+	transition: color .9s,border .9s; 
+}
+.aaa ul li a:hover{
+	color: darkgray;
+	border: 1px solid #fff;
+}
