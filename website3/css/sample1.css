@@ -1,0 +1,90 @@
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+body{
+	font-family: simhei;
+}
+ul{
+	list-style: none;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+input{
+	border: none;
+	outline: none;
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+}
+header{
+	position: fixed;
+	width: 100%;
+	padding: 20px 0px;
+	background-color: rgba(0,0,0,0.1);
+}
+header a{
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+header a:hover{
+	color: #339BEB;
+}
+header .logo{
+	float: left;
+}
+header .logo img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 75px;
+	height: 75px;
+}
+header .logo span{
+	vertical-align: middle;
+}
+header .logo span{
+	font-size:3.5em;
+	font-family: 'Dancing Script', cursive;
+}
+header .topMenu{
+	float: right;
+	margin-top: 5px;
+}
+header .topMenu ul li{
+	float: left;
+	margin: 0px 30px;
+}
+.banner{
+	min-height: 1400px;
+	width: 100%;
+	height: auto;
+	background: url(../img/pexels-photo-404747.jpeg) no-repeat center top;
+	
+}
+.banner .caption{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+.banner .caption h1 span{
+	color: #339BEB;
+}
+.banner .caption p{
+	text-align: left;
+	line-height: 1.8;
+	font-family: simhei;
+}
+.banner .caption p em{
+	background-color:rgba(255,255,255,.5);
+	color: #000;
+	padding: 2px 4px;
+	font-style: normal;
+	text-shadow: none;
+}
