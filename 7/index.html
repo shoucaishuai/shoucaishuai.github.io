@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>按钮</title>
+	</head>
+	<style type="text/css">
+	.k{
+	    
+		   margin: 100px auto;
+           text-align: center;
+       }
+       .k input{
+				margin-left:50px;
+				width: 50px;
+				height:50px;
+				border: none;
+				cursor: pointer;
+			}
+
+	</style>
+	<body>
+		<div class="k">
+			<input type="button" value="1" />
+			<input type="button" value="2" />
+			<input type="button" value="3" />
+			<input type="button" value="4" />
+			<input type="button" value="5" />
+			<input type="button" value="6" />
+		</div>
+		<script type="text/javascript">
+			var oBtn=document.querySelectorAll(".k input");
+			for(var i=0;i<oBtn.length;i++){
+				oBtn[i].addEventListener("click",function(press){
+					return function(e){
+						alert("您选择了第"+press+"个按钮");
+					};
+				}(i+1));
+			}
+
+		</script>
+</body>
+</html>
