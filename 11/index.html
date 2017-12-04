@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+
+		<style type="text/css">
+			a{
+				text-decoration: none;
+				position: relative;
+				display: inline-block;
+				margin: 100px;
+				
+			}
+          #top{
+          	opacity: 0;
+          	position: absolute;
+          	top: -40px;
+          	left: -60px;
+          	width: 150px;
+          	text-align: center;
+          	background-color: #000;
+          	color: #fff;
+          	transition: opacity .8s;
+          }
+          
+          #k{
+          	opacity: 0;
+          	width: 0px;
+          	height: 0px;
+          	border: 13px solid;
+          	border-color: black transparent transparent transparent;
+          	position: absolute;
+          	top: 89px;
+          	left: 110px;
+          	transition: opacity .8s;
+          }
+          a:hover #top{
+          	opacity: 1;
+          }
+          a:first-child:hover~#k{
+          	opacity: 1;
+          }
+
+          #right{
+          	opacity: 0;
+          	position: absolute;
+          	top: -40px;
+          	left: 15px;
+          	width: 150px;
+          	text-align: center;
+          	background-color: #000;
+          	color: #fff;
+          	transition: opacity .8s;
+          }
+          #l{
+          	opacity: 0;
+          	width: 0px;
+          	height: 0px;
+          	border: 13px solid;
+          	border-color: black transparent transparent transparent;
+          	position: absolute;
+          	top: 89px;
+          	left: 370px;
+          	transition: opacity .8s;
+          }
+            a:hover #right{
+          	opacity: 1;
+          }
+          a:nth-child(2):hover~#l{
+          	opacity: 1;
+          }
+          
+          #left{
+          	opacity: 0;
+          	position: absolute;
+          	top: -40px;
+          	left: -120px;
+          	width: 150px;
+          	text-align: center;
+          	background-color: #000;
+          	color: #fff;
+          	transition: opacity .8s;
+          }
+          #m{
+          	opacity: 0;
+          	width: 0px;
+          	height: 0px;
+          	border: 13px solid;
+          	border-color: black transparent transparent transparent;
+          	position: absolute;
+          	top: 89px;
+          	left: 570px;
+          	transition: opacity .8s;
+          }
+            a:hover #left{
+          	opacity: 1;
+          }
+          a:nth-child(3):hover~#m{
+          	opacity: 1;
+          }
+          
+          
+          #botton{
+          	opacity: 0;
+          	position: absolute;
+          	top: 38px;
+          	left: -50px;
+          	width: 150px;
+          	text-align: center;
+          	background-color: #000;
+          	color: #fff;
+          	transition: opacity .8s;
+          }
+          #n{
+          	opacity: 0;
+          	width: 0px;
+          	height: 0px;
+          	border: 13px solid;
+          	border-color: transparent transparent black transparent;
+          	position: absolute;
+          	top: 120px;
+          	left: 820px;
+          	transition: opacity .8s;
+          }
+            a:hover #botton{
+          	opacity: 1;
+          }
+          a:nth-child(4):hover~#n{
+          	opacity: 1;
+          }
+          
+		</style>
+
+	</head>
+
+	<body>
+		<a href="" class="top">top
+
+		<span id="top">top</span>
+
+		</a>
+		<a href="" class="right">right
+
+			<span id="right">right</span>
+
+		</a>
+		<a href="" class="left">left
+
+			<span id="left">left</span>
+
+		</a>
+		<a href="" class="botton">botton
+
+			<span id="botton">botton</span>
+
+		</a>
+
+		<div id="k"></div>
+		<div id="l"></div>
+		<div id="m"></div>
+		<div id="n"></div>
+
+	</body>
+
+</html>
